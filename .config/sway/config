@@ -11,6 +11,10 @@ set $right l
 set $term alacritty
 # Your preferred application launcher
 set $menu wmenu-run
+# Your preferred file manager
+set $file nautilus
+# Your preferred browser
+set $browser mullvad-browser
 
 # Screen lock command
 set $lock swaylock -f -c 000000
@@ -55,6 +59,12 @@ input type:pointer {
 
     # Start your launcher
     bindsym $mod+tab exec $menu
+
+    # Start your file manager
+    bindsym $mod+t exec $file
+
+    # Start your browser
+    bindsym $mod+b exec $browser
 
     # Lock screen
     bindsym $mod+l+s exec $lock
@@ -128,8 +138,8 @@ input type:pointer {
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+    bindsym $mod+Shift+b splith
+    bindsym $mod+Shift+v splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
