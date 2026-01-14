@@ -20,6 +20,11 @@ return {
         filetypes = { "c", "cpp", "objc", "objcpp" }, -- Ensure it works for C files
             }
       )
+      vim.lsp.config('jedi-language-server', {
+        cmd = { "jedi-language-server" },
+        filetypes = { "py" },
+            }
+      )
     end,
   },
 }
