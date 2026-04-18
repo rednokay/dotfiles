@@ -29,3 +29,6 @@ vim.diagnostic.config({
   update_in_insert = false, -- Don’t update during typing
   severity_sort = true,     -- Sort by severity
 })
+
+vim.api.nvim_set_hl(0, "@function.python",        { italic = true })
+vim.api.nvim_set_hl(0, "@type.python",        { italic = true })

@@ -22,9 +22,11 @@ return {
       )
       vim.lsp.config('jedi-language-server', {
         cmd = { "jedi-language-server" },
-        filetypes = { "py" },
+        filetypes = { "python" },
             }
       )
+
+      vim.lsp.enable({ 'clangd', 'jedi-language-server' })
     end,
   },
 }
